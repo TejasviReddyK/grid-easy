@@ -7,7 +7,7 @@ _A wordpress drag and drop editor. To be used as a plugin. Still a work in progr
 
 2. Most editors out there add shortcodes to the content, which makes it hard to just export the content.
 
-Grid Easy aims to be an editor for developers by not making any assumptions, except one. It uses a grid-system that most UI developers are familiar with – [Bootstrap](http://getbootstrap.com/). It also keeps the post content purely as it is and doesn't add any plugin-specific shortcodes.
+Grid Easy aims to be an editor for developers by not making any assumptions, except one. It uses a grid-system that most UI developers are familiar with – [Bootstrap](https://getbootstrap.com/docs/3.3/css/#grid). It also keeps the post content purely as it is and doesn't add any plugin-specific shortcodes.
 
 **But if a developer wants to write HTML, couldn't they simply use the built-in HTML editor. Why this?**
 
