@@ -1,5 +1,5 @@
 # Grid Easy
-_A wordpress drag and drop editor. Still a work in progress._
+_A wordpress drag and drop editor. To be used as a plugin. Still a work in progress._
 
 **Enough with the editors already. There are dozens of them for WordPress out there. Where is the need for another?**
 
