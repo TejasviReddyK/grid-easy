@@ -11,7 +11,7 @@ _Grid Easy_ aims to be an editor for developers by not making any assumptions, e
 
 **But if a developer wants to write HTML, couldn't they simply use the built-in HTML editor? Why this?**
 
-Not all developers want to write HTML all the time. Sometimes a grid builder gets the job done fine, preferable even. It's when things get messy that you want to review your HTML and change it. _Grid Easy_ makes this easy by giving the user the option to switch back and forth between HTML and the grid.
+Not all developers want to write HTML all the time. Sometimes a grid builder gets the job done fine, preferable even. It's when things get messy that you want to review your HTML and change it. _Grid Easy_ makes this easy by giving the developer the option to switch back and forth between HTML and the grid.
 
 
 
