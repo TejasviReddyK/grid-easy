@@ -3,7 +3,7 @@ _A wordpress drag and drop editor. To be used as a plugin. Still a work in progr
 
 **There are dozens of them drag-and-drop editors for WordPress out there. Why _Grid Easy_?**
 
-1. All those editors have been built to be easy-to-use for users who don't want to be bothered with the technicalities. So, these editors make a lot of decisions for the users. This is frustrating and counter-productive for developers who are more comfortable working with HTML and CSS. Writing your own HTML and CSS affords more control after all.
+1. All those editors have been built for non-developers who don't want to be bothered with the technicalities. So, these editors make a lot of decisions for them. For developers who are more comfortable working with HTML and CSS, this is frustrating and counter-productive. Writing your own HTML and CSS affords more control after all.
 
 2. Most editors out there add shortcodes to the content, which makes it hard to just export the content.
 
