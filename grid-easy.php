@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*
  * Plugin Name: Grid Easy
  * Author: Tejasvi Karne
@@ -42,10 +42,10 @@ function add_grid_template(){
       <div class='column-control' style='margin:0 0 20px;font-family:Segoe UI'>
         <div class='buttons'>
           <a class='button thickbox' href='#TB_inline?width=900&height=600&inlineId=grid-easy-edit-area' style='position:absolute;top:13px;right:15px;'>Edit</a>
-          <button type='button' class='button button-small shrink-column' style='height:36px;border-radius:50%'><span class='dashicons dashicons-minus' style='pointer-events:none'></span><span class='screen-reader-text'>Shrink</span></button>
-          <button type='button' class='button button-small grow-column' style='height:36px;border-radius:50%'><span class='dashicons dashicons-plus' style='pointer-events:none'></span><span class='screen-reader-text'>Grow</span></button>
-					<button type='button' class='button button-small trash-column' style='height:36px;border-radius:50%;display:none;'><span class='dashicons dashicons-trash' style='pointer-events:none'></span><span class='screen-reader-text'>Delete</span></button>
-					<button type='button' class='button button-small duplicate-column' style='height:36px;border-radius:50%;display:none;'><span class='dashicons dashicons-admin-page' style='pointer-events:none;transform:rotate(90deg)'></span><span class='screen-reader-text'>Duplicate</span></button>
+          <button type='button' class='button shrink-column' style='height:28px;padding:0 3px;'><span class='dashicons dashicons-minus' style='pointer-events:none'></span><span class='screen-reader-text'>Shrink</span></button>
+          <button type='button' class='button grow-column' style='height:28px;padding:0 3px;'><span class='dashicons dashicons-plus' style='pointer-events:none'></span><span class='screen-reader-text'>Grow</span></button>
+					<button type='button' class='button trash-column' style='height:28px;display:none;padding:0 3px;'><span class='dashicons dashicons-trash' style='pointer-events:none'></span><span class='screen-reader-text'>Delete</span></button>
+					<button type='button' class='button duplicate-column' style='height:28px;display:none;padding:0 3px;'><span class='dashicons dashicons-admin-page' style='pointer-events:none;transform:rotate(90deg)'></span><span class='screen-reader-text'>Duplicate</span></button>
 <button type='button' class='button button-small' title='Column Settings' style='float:right;height:36px;border-radius:50%;'><span class='dashicons dashicons-admin-settings' style='pointer-events:none'></span><span class='screen-reader-text'>Column Settings</span></button>
 	  <div class='column-control-list' tabindex=0 style='position:absolute;width:150px;right:15px;top:46px;z-index:10;box-shadow:0 5px 10px 0px rgba(0,0,0,0.19);background:#fafafa;padding:.25em 0 .45em;border:1px solid #ddd;font-size:12px;' hidden>
           <button type='button' style='background:none;border:none;padding:3px 16px 5px 14px;width:100%;text-align:left;'>Edit column</button>
