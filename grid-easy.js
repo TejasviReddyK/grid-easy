@@ -1,6 +1,6 @@
 (function() {
   //declaring global variables
-  var wrap,
+  var contentWrap,
     gridContainer,
     grid,
     editorContainer,
@@ -14,12 +14,12 @@
   window.addEventListener("DOMContentLoaded", setUpTheGrid);
 
   function setUpTheGrid() {
-    wrap = document.getElementById("wp-content-wrap");
-    uploaderEditor = wrap.getElementsByClassName("uploader-editor")[0];
-    editorTabs = wrap.getElementsByClassName("wp-editor-tabs")[0];
-    content = wrap.getElementsByTagName("textarea")[0];
-    editorContainer = wrap.getElementsByClassName("wp-editor-container")[0];
-    gridContainer = document.createElement("div");
+    contentWrap      = document.getElementById("wp-content-wrap");
+    uploaderEditor   = contentWrap.getElementsByClassName("uploader-editor")[0];
+    editorTabs       = contentWrap.getElementsByClassName("wp-editor-tabs")[0];
+    content          = contentWrap.getElementsByTagName("textarea")[0];
+    editorContainer  = contentWrap.getElementsByClassName("wp-editor-container")[0];
+    gridContainer    = document.createElement("div");
     gridContainer.id = "grid-easy-container";
 
     gridContainer.innerHTML = document.getElementById(
@@ -29,11 +29,11 @@
       "tmpl-grid-easy-buttons"
     ).innerHTML;
     uploaderEditor.parentElement.insertBefore(gridContainer, uploaderEditor);
-    wrap.classList.remove("html-active");
-    wrap.classList.add("grid-active");
+    contentWrap.classList.remove("html-active");
+    contentWrap.classList.add("grid-active");
     grid = gridContainer.children[1];
     prepareGrid();
-    wrap.addEventListener("click", gridActions);
+    contentWrap.addEventListener("click", gridActions);
     document
       .getElementById("grid-easy-edit-area-button")
       .addEventListener("click", updateBlock);
@@ -43,7 +43,7 @@
 
   function gridActions(event) {
     var target = event.target;
-    switch (target.textContent) {
+    switch (target.textContent.trim()) {
       case "Row Settings":
       case "Column Settings":
         showSettings(target);
@@ -120,12 +120,11 @@
           gridContainer.classList.remove("ctrl");
       }
     }
-    console.log(e);
     switch (e.which) {
       case 9:
-        if (target.matches("#grid-easy-container a.thickbox")) {
+        /*if (target.matches("#grid-easy-container a.thickbox")) {
           target.click();
-        }
+        }*/
         if (
           target.matches(
             ".row-control-list button:last-child,.column-control-list button:last-child"
@@ -152,7 +151,7 @@
 
   function showSettings(el) {
     el.nextElementSibling.style.display = "block";
-    el.nextElementSibling.focus();
+    el.focus();
     el.classList.add("active");
     el.setAttribute("aria-expanded", "true");
     window.addEventListener("click", hideSettings, true);
@@ -245,16 +244,16 @@
   function showHTML() {
     gridContainer.style.display = "none";
     editorContainer.style.display = "block";
-    wrap.classList.add("html-active");
-    wrap.classList.remove("grid-active");
+    contentWrap.classList.add("html-active");
+    contentWrap.classList.remove("grid-active");
   }
 
   function showGrid() {
     prepareGrid();
     gridContainer.style.display = "block";
     editorContainer.style.display = "none";
-    wrap.classList.remove("html-active");
-    wrap.classList.add("grid-active");
+    contentWrap.classList.remove("html-active");
+    contentWrap.classList.add("grid-active");
   }
 
   function prepareGrid() {
